@@ -4,7 +4,7 @@
         private $hostName = "localhost";
         private $userName ="root";
         private $passWord = "";
-        private $database = "attendance_monitoring_db"; 
+        private $database = "monitoring_db"; 
 
         protected $conn; 
 

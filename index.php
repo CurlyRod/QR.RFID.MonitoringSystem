@@ -32,7 +32,7 @@
                             Invalid Credentials
                         </div> 
                         <script src="./login/login.js"></script>
-                    <?php endif; ?>                  
+               <?php endif; ?>                  
                 <div class="mb-3">
                     <label>Email address</label>
                     <input type="email" class="form-control" name="email" aria-describedby="emailHelp"

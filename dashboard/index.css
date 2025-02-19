@@ -20,7 +20,7 @@
     left:0; 
     height:100%; 
     width:260px; 
-    background-color: var(--color-dark1); 
+    background-color:  #232E3C;
     transition: all .5s ease; 
     z-index: 100;
 }  
@@ -197,12 +197,34 @@
 .home .toggle-sidebar{
     height: 60px;
     display: flex;
-    align-items: center;
+    align-items: center; 
+    justify-content: space-between; 
+    padding-right:20px;
     width: 100%;
-    cursor: pointer; 
     user-select: none; 
-    background-color: var(--color-light2);
+    background-color: #ffffff;
+}   
+.left-bar {
+    display:flex;
+    gap:10px;
+    align-items: center; 
+    font-size: 13px;
 } 
+#profileImage {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    background: #2C3145;
+    font-size: 0.9rem;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } 
+.home .toggle-sidebar .hamburger-logo{ 
+    cursor: pointer;
+}
 .home .toggle-sidebar i{
     font-size: 35px;
     color: var(--color-dark1); 
@@ -212,6 +234,11 @@
     font-size: 25px;
     color: var(--color-dark1); 
     font-weight: 600;
+} 
+.content-container{ 
+    padding:1rem; 
+    background-color:#E8ECEF;
+    height: 90vh;
 }
 
 @media (max-width: 1080px) {

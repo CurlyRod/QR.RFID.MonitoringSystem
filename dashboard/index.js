@@ -1,33 +1,7 @@
-// const listItems = document.querySelectorAll(".sidebar-list li"); 
-
-// listItems.forEach((item) => {
-//      item.addEventListener("click", ()=> {
-//         let isActive = item.classList.contains("active");  
- 
-       
-//         listItems.forEach((el)=>{
-//             el.classList.remove("active"); 
-//         });  
-
-//         if(isActive) item.classList.remove("active"); 
-//         else item.classList.add("active");
-//      });
-// }); 
-
-// const toggleSidebar =  document.querySelector('.toggle-sidebar'); 
-// const sidebar = document.querySelector('.sidebar'); 
-
-
-// toggleSidebar.addEventListener("click", ()=>{  
-      
-//     listItems.forEach((el)=>{
-//         el.classList.remove("active"); 
-//     });  
-//       sidebar.classList.toggle("close"); 
-      
-// }); 
-
-
+ const fullName = document.getElementById('fullName').textContent;
+const [firstName, , lastName] = fullName.split(' '); // Using array destructuring to skip the middle name
+const initials = firstName[0] + lastName[0];
+document.getElementById('profileImage').innerHTML = initials.toUpperCase();
 
 const listItems = document.querySelectorAll(".sidebar-list li"); 
 
@@ -47,7 +21,7 @@ listItems.forEach((item) => {
     });
 }); 
 
-const toggleSidebar = document.querySelector('.toggle-sidebar'); 
+const toggleSidebar = document.querySelector('.hamburger-logo'); 
 const sidebar = document.querySelector('.sidebar'); 
 
 toggleSidebar.addEventListener("click", () => {
